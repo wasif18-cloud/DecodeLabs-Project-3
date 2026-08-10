@@ -1,90 +1,86 @@
-# 📊 Data Analytics Project 3 -- SQL Data Analysis
+# 📊 Data Analytics Project 3 -- SQL Data Analysi
 
-## 📌 Project Overview
+## 🎯 Objectives
 
-This project focuses on analyzing an e-commerce dataset using **SQL**
-and **MySQL Workbench**. The goal is to extract useful insights by
-filtering, sorting, grouping, and aggregating data.
+* Clean and prepare the raw dataset.
+* Organize sales and order information.
+* Perform SQL queries for data analysis.
+* Analyze products, sales, payments, and order status.
+* Extract useful business insights from the dataset.
+---
+## 🛠️ Tools & Technologies
 
-## 🛠️ Tools Used
+* 📗 Microsoft Excel
+* 🐬 MySQL
+* 💻 MySQL Workbench
+* 🌐 Git & GitHub
+---
+## 📂 Dataset
 
--   MySQL
--   MySQL Workbench
--   SQL
--   CSV Dataset
+The dataset contains information such as:
 
-## 🗄️ Database
+* Order ID
+* Order Date
+* Customer ID
+* Product
+* Quantity
+* Unit Price
+* Total Price
+* Payment Method
+* Order Status
+* Shipping Address
+* Tracking Number
+* Items in Cart
+* Coupon Code
+* Referral Source
+---
+## 📊 SQL Analysis
 
--   **Database Name:** `Decodelabs`
--   **Table Name:** `Project3`
+The following SQL operations were performed:
 
-The dataset contains order information such as Order ID, Order Date,
-Customer ID, Product, Quantity, Unit Price, Payment Method, Order
-Status, Referral Source, and Total Price.
+1. Display all orders.
+2. Display only delivered orders.
+3. Find all Laptop orders.
+4. Sort orders by Total Price from highest to lowest.
+5. Count the total number of orders.
+6. Count orders for each product.
+7. Calculate total sales.
+8. Calculate average order value.
+9. Find the highest-priced order.
+10. Find the lowest-priced order.
+11. Calculate total quantity sold for each product.
+12. Show products with more than 100 units sold using `HAVING`.
+13. Count orders by payment method.
+14. Count orders by referral source.
+15. Calculate total sales for each order status.
+---
+## 📁 Project Structure
 
-## 🔍 SQL Operations Performed
-
--   Created database and table
--   Displayed all records using `SELECT`
--   Filtered data using `WHERE`
--   Sorted data using `ORDER BY`
--   Grouped data using `GROUP BY`
--   Counted total orders using `COUNT()`
--   Calculated total sales using `SUM()`
--   Calculated average order value using `AVG()`
--   Found highest and lowest priced orders
--   Calculated quantity sold for each product
--   Used `HAVING` to filter grouped results
--   Analyzed orders by payment method
--   Analyzed orders by referral source
--   Calculated sales by order status
-
-## 💻 Sample Queries
-
-``` sql
--- Show all data
-SELECT * FROM Project3;
-
--- Total number of orders
-SELECT COUNT(*) AS OrderID
-FROM Project3;
-
--- Total sales
-SELECT SUM(TotalPrice) AS TotalSales
-FROM Project3;
-
--- Average order value
-SELECT AVG(TotalPrice) AS Average_Order_Value
-FROM Project3;
-
--- Orders by payment method
-SELECT PaymentMethod, COUNT(*) AS Total_Order
-FROM Project3
-GROUP BY PaymentMethod;
-
--- Total quantity sold for each product
-SELECT Product, SUM(Quantity) AS Total_Quantity_Sold
-FROM Project3
-GROUP BY Product;
+```text
+Data-Analytics-Project-Part-3/
+│
+├── Dataset/
+├── Cleaned-Dataset/
+├── SQL-Queries/
+├── Excel-Workbook/
+└── README.md
 ```
+---
+## 📚 Skills Learned
 
-## 🎯 Skills Demonstrated
+Through this project, I gained practical experience in:
 
--   SQL Fundamentals
--   Database Creation
--   Data Querying
--   Data Filtering
--   Data Sorting
--   Data Grouping
--   Aggregate Functions
--   E-commerce Data Analysis
-
-## 📁 Project Files
-
--   `Project 3 (Sql Source Code).txt` -- SQL queries used for analysis
--   `Data Analytics Project 3(2).pdf` -- Project instructions and
-    reference material
-
+* Data Cleaning
+* Data Preparation
+* Microsoft Excel
+* MySQL
+* SQL Queries
+* Data Analysis
+* Aggregate Functions
+* `GROUP BY` and `HAVING`
+* Sorting and Filtering Data
+* GitHub Repository Management
+---
 ## ✅ Conclusion
 
 This project demonstrates the use of SQL to convert raw e-commerce data
