@@ -90,7 +90,3 @@ GROUP BY Product;
 This project demonstrates the use of SQL to convert raw e-commerce data
 into useful insights through filtering, sorting, grouping, and aggregate
 functions.
-
-------------------------------------------------------------------------
-
-**Data Analytics Project 3 \| SQL Data Analysis**
