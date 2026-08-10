@@ -66,6 +66,7 @@ GROUP BY PaymentMethod;
 SELECT Product, SUM(Quantity) AS Total_Quantity_Sold
 FROM Project3
 GROUP BY Product;
+```
 
 ## 🎯 Skills Demonstrated
 
@@ -90,5 +91,6 @@ This project demonstrates the use of SQL to convert raw e-commerce data
 into useful insights through filtering, sorting, grouping, and aggregate
 functions.
 
+------------------------------------------------------------------------
 
 **Data Analytics Project 3 \| SQL Data Analysis**
